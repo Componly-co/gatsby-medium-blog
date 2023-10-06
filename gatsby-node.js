@@ -138,3 +138,29 @@ exports.createSchemaCustomization = ({ actions }) => {
   `)
 }
 
+
+exports.onCreateWebpackConfig = ({ actions, stage, getConfig }) => {
+  const config = getConfig();
+
+  config.module.rules.push({
+    test: /\.(js|mjs|jsx|ts|tsx)$/,
+    include: [
+      path.resolve(process.cwd(), 'src'),
+      path.resolve(process.cwd(), 'pages')
+    ],
+    use: [
+      {
+        loader: 'babel-loader',
+        options: {
+          presets: ["@babel/preset-typescript"],
+          plugins: [
+            '@babel/plugin-syntax-jsx',
+            '@componly/babel-plugin',
+          ]
+        },
+      },
+    ],
+  });
+
+  actions.replaceWebpackConfig(config);
+}
