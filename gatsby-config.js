@@ -2,13 +2,13 @@ require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://app.componly.co`,
     title: `Brian Ruiz`,
     author: {
       name: `Brian Ruiz`,
       summary: `Brian Ruiz is a Software Engineer based out of Houston, TX.`,
     },
     description: `Brian Ruiz is a Software Engineer based out of Houston, TX.`,
-    siteUrl: `https://b-r.io`,
     social: {
       linkedin: `brianruizy`,
       github: `BrianRuizy`,
@@ -214,6 +214,7 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
+    `gatsby-plugin-sitemap` ,
     {
       resolve: `gatsby-plugin-algolia`,
       options: {
