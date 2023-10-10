@@ -2,7 +2,7 @@ require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://app.componly.co`,
+    siteUrl: `https://gatsby-medium-blog-five.vercel.app`,
     title: `Brian Ruiz`,
     author: {
       name: `Brian Ruiz`,
