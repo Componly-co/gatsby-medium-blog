@@ -142,8 +142,8 @@ export default function PanelRight({ extraDrawerContent }) {
               >
                 <Box display={"flex"} gap={2} alignItems={"center"}>
                   <Avatar
-                    alt="Brian Ruiz"
-                    src="https://www.b-r.io/avatar.png"
+                    alt="Alex Parker"
+                    src="/avatar.png"
                     sx={{ width: 64, height: 64, backgroundColor: "divider" }}
                   >
                     BR

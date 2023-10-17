@@ -158,8 +158,8 @@ const Layout = ({
                     >
                       {isRootPath && (
                         <Avatar
-                          alt="Brian Ruiz"
-                          src="https://www.b-r.io/avatar.png"
+                          alt="Alex Parker"
+                          src="/avatar.png"
                           sx={{
                             width: 48,
                             height: 48,
