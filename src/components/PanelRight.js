@@ -159,7 +159,7 @@ export default function PanelRight({ extraDrawerContent }) {
                         color: "text.primary",
                       }}
                     >
-                      Brian Ruiz
+                      Alex Parker
                     </Typography>
                     <Typography variant="body2" sx={{ color: "text.disabled" }}>
                       Software Engineer
