@@ -3,12 +3,12 @@ require("dotenv").config()
 module.exports = {
   siteMetadata: {
     siteUrl: `https://gatsby-medium-blog-five.vercel.app`,
-    title: `Brian Ruiz`,
+    title: `Alex Parker`,
     author: {
-      name: `Brian Ruiz`,
-      summary: `Brian Ruiz is a Software Engineer based out of Houston, TX.`,
+      name: `Alex Parker`,
+      summary: `Hello, I'm Alex, an enthusiastic frontend engineer `,
     },
-    description: `Brian Ruiz is a Software Engineer based out of Houston, TX.`,
+    description: `Hello, I'm Alex, an enthusiastic frontend engineer based in the tech hub of San Francisco, California. My passion for creating seamless and visually appealing user interfaces has led me to share my knowledge and experiences through personal blog posts and detailed case studies.`,
     social: {
       linkedin: `brianruizy`,
       github: `BrianRuizy`,
