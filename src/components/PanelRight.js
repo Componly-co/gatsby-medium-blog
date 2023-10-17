@@ -167,9 +167,7 @@ export default function PanelRight({ extraDrawerContent }) {
                   </div>
                 </Box>
                 <Typography variant="body2" sx={{  color: "text.secondary" }}>
-                  I'm a full-stack Software Engineer based out of Houston, TX. 
-                  Here you'll find my personal blog posts and case studies 
-                  on all things tech.
+                Hello, I'm Alex, an enthusiastic frontend engineer based in the tech hub of San Francisco, California. My passion for creating seamless and visually appealing user interfaces has led me to share my knowledge and experiences through personal blog posts and detailed case studies.
                 </Typography>
               </Box>
             )}
