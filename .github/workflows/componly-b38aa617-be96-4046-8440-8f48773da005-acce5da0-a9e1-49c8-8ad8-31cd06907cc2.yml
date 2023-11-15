@@ -68,6 +68,8 @@ jobs:
           COMPONLY_BACKEND_URL: https://a573-41-111-227-1.ngrok-free.app
           COMPONLY_CLI_ENV: development
         run: |
+          echo -e "\n@componly:registry=https://npm.pkg.github.com/" >> .npmrc
+          echo //npm.pkg.github.com/:_authToken=${{ secrets.COMPONLY_NPM_AUTH_TOKEN }} >> .npmrc
           ls -a 
           cd  ${{ matrix.workspaces }}   
           npx componly scan --cli-id=${{secrets.COMPONLY_API_KEY}} --cli-password="${{secrets.COMPONLY_API_SECRET}}" --config-path ./   --project  ./
