@@ -70,5 +70,6 @@ jobs:
         run: |
           ls -a 
           cd  ${{ matrix.workspaces }}   
+          echo -e "\n@componly:registry=https://npm.pkg.github.com/" >> .npmrc
           npx componly scan --cli-id=${{secrets.COMPONLY_API_KEY}} --cli-password="${{secrets.COMPONLY_API_SECRET}}" --config-path ./   --project  ./
 
